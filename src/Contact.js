@@ -1,7 +1,8 @@
-import React from "react";
+import react from "react";
 
 function Contact(){
-    return<h2>Welcome to Contact</h2>
+    return(
+        <h2>please contact me</h2>
+    );
 }
-
 export default Contact;

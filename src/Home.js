@@ -1,5 +1,8 @@
-import React from 'react';
-function Home() {
-  return <h2>Welcome to the Home Page</h2>;
+import react from "react";
+
+function Home(){
+    return(
+        <h2>Welcome to my Home page</h2>
+    );
 }
 export default Home;
