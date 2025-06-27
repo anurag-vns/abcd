@@ -11,11 +11,12 @@ function Layout() {
                     </li>
                     <li>
                         <Link to="/blogs">Blogs</Link>
+                        
                     </li>
 
-                    <li>
+                <li>
                         <Link to="/contact">Contact</Link>
-                    </li>
+                </li>
 
                 </ul>
             </nav>
