@@ -1,37 +1,24 @@
-import { Routes, Route, Link, Outlet } from "react-router-dom";
-import Login from "./pages/Login";
-import Home from "./pages/Home";
-import Registration from "./pages/Registration";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./page1/Home";
+import Login from "./page1/Login";
+import Dashboard from "./page1/Dashboard";
+import ProtectedRoute from "./page1/ProtectedRoute";
 
 function App() {
   return (
-    <>
-      <nav>
-        <ul>
-          <li>
-            <Link to="./">Home</Link>
-          </li>
-
-          <li>
-            <Link to="/registration">Registration</Link>
-          </li>
-
-          <li>
-            <Link to="/login">Login</Link>
-          </li>
-        </ul>
-      </nav>
-      <Outlet/>
+    <Router>
 
       <Routes>
-        <Route path="/" element={<Home />} ></Route>
-        <Route path="/registration" element={<Registration />} ></Route>
-        <Route path="/login" element={<Login />} ></Route>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/dashboard" element={<ProtectedRoute>
+          <Dashboard />
+        </ProtectedRoute>
+        } />
       </Routes>
-    </>
+      
+    </Router>
 
   );
 }
-
 export default App;
-
