@@ -1,5 +1,6 @@
 import React from 'react';
 import Msg from './ReactBasics/Msg';
+import ToggleMessage from './ReactBasics/ToggleMessage';
 
 
 
@@ -7,7 +8,7 @@ function App() {
   return (
   
     <div>
-      <Msg/>
+      <ToggleMessage/>
     </div>
 
 
