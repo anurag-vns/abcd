@@ -4,8 +4,8 @@ function TodoList() {
     const todos = ['Learn React', 'Do Homework', 'Sleep']
     return (
         <ul>
-            {todos.map((item) => (
-                <li>{item}</li>
+            {todos.map((item, index) => (
+                <li key={index}>{item}</li>
             ))}
         </ul>
     );
