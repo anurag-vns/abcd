@@ -1,12 +1,15 @@
 import React from 'react';
 import ExampleB from './Arrayfunction/ExampleB';
+import Greeting from './ReactBasics/Greeting';
 
 
 
 function App() {
   return (
   
-    <ExampleB/>
+    <div>
+      <Greeting name="Ram"/>
+    </div>
 
 
   );

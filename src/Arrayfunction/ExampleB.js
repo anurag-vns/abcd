@@ -10,7 +10,8 @@ function ExampleB() {
         <div>
             {students.map((student, index) =>(
                 <p key={index}>{student.name} scored{student.marks}markes.</p>
-            )) }
+            ))
+ }
         </div>
     );
 }
