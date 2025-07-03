@@ -1,35 +1,14 @@
 import React from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
-import Home from './page4/Home';
-import About from './page4/About';
-import Dashboard from './page4/Dashboard';
-import Up from './page4/Up';
+import ExampleA from './Arrayfunction/ExampleA';
 
 
 
 function App() {
   return (
-<div>
-  
-    <nav>
-        <Link to="/">Home</Link>|
-        <Link to="/about">About</Link>|
-        <Link to="/dashboard">Dashboard</Link>
-        <Link to="/up">Up</Link>
-       
-      </nav>
-   
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/about" element={<About/>} />
-        <Route path="/dashboard" element={<Dashboard/>}/>
-        <Route path="/up" element={<Up/>}/>
-        </Routes>  
-    </div>
-    
+    <ExampleA />
 
 
- );
+  );
 }
 
 export default App;
