@@ -1,11 +1,12 @@
 import React from 'react';
-import ExampleA from './Arrayfunction/ExampleA';
+import ExampleB from './Arrayfunction/ExampleB';
 
 
 
 function App() {
   return (
-    <ExampleA />
+  
+    <ExampleB/>
 
 
   );
