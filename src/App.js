@@ -1,6 +1,5 @@
 import React from 'react';
-import ExampleB from './Arrayfunction/ExampleB';
-import Greeting from './ReactBasics/Greeting';
+import Msg from './ReactBasics/Msg';
 
 
 
@@ -8,7 +7,7 @@ function App() {
   return (
   
     <div>
-      <Greeting name="Ram"/>
+      <Msg/>
     </div>
 
 
