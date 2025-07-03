@@ -1,6 +1,5 @@
 import React from 'react';
-import Msg from './ReactBasics/Msg';
-import ToggleMessage from './ReactBasics/ToggleMessage';
+import TodoList from './ReactBasics/TodoList';
 
 
 
@@ -8,7 +7,7 @@ function App() {
   return (
   
     <div>
-      <ToggleMessage/>
+      <TodoList/>
     </div>
 
 
