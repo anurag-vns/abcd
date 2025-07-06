@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>example of promise</title>
+</head>
+
+<body>
+    <script>
+        let p = new Promise(function (resolve, reject) {
+            let a = 1 + 2;
+            if (a == 3) {
+                resolve("sucess")
+            }
+            else {
+                reject("failed");
+            }
+        });
+        console.log(p);
+
+    </script>
+</body>
+
+</html>

@@ -1,5 +1,5 @@
 import React from 'react';
-import LiveInput from './ReactBasics/LiveInput';
+import StarWarsCharacter from './api/StarWarsCharacter';
 
 
 
@@ -7,7 +7,7 @@ function App() {
   return (
   
     <div>
-      <LiveInput/>
+      <StarWarsCharacter/>
     </div>
 
 
