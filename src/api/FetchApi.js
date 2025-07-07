@@ -1,20 +1,32 @@
-import react, { useEffect } from "react";
+import react, { useEffect, useState } from "react";
 
 function FetchApi() {
-   useEffect(()=>{
- fetch("http://jsonplaceholder.typicode.com/posts")
-        .then((response) => {
-            response.json().then((result) => {
-                console.log(result);
+    const [post, setPost] = useState([]);
+    useEffect(() => {
+        fetch("http://jsonplaceholder.typicode.com/posts")
+            .then((response) => {
+                response.json().then((result) => {
+                    setPost(result);
+                })
             })
-        })
-   });
+    });
 
 
 
     return (
         <div>
-            <h1>Fetch Api</h1>
+            <ul>
+                {
+                    post.map(pst => {
+                        return (
+                            <>
+                                <li>{pst.id}</li>
+                                <li>{pst.title}</li>
+                            </>
+                        )
+                    })
+                }
+            </ul>
         </div>
     )
 }
