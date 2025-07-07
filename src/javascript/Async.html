@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Async and await</title>
 </head>
+
 <body>
     <script>
-       async function example(){
+        async function example() {
             console.log("Hello 1");
-           await console.log("Hello 2");
-              console.log("Hello 3");
+            const data = await fetch("http://jsonplaceholder.typicode.com/posts");
+            console.log("Hello 2");
+            const posts = await data.json();
+            console.log("Hello 3");
+            return posts;
         }
-        example();
-         console.log("Hello 4");
-          console.log("Hello 5");
+      let a=example();
+      console.log(a);
+        console.log("Hello 4");
+        console.log("Hello 5");
 
-    </script> 
+    </script>
 </body>
-</html> 
+
+</html>
