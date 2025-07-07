@@ -17,10 +17,11 @@
             console.log("Hello 3");
             return posts;
         }
-      let a=example();
-      console.log(a);
-        console.log("Hello 4");
-        console.log("Hello 5");
+      example().then((result)=>{
+        console.log(result);
+      }).catch((msg)=>{
+        console.log(msg);
+      });
 
     </script>
 </body>
