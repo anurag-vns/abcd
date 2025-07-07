@@ -10,19 +10,28 @@
 <body>
     <script>
         let p = new Promise(function (resolve, reject) {
-            let a = 1 + 3;
+            let a = 1 + 2;
             if (a == 3) {
-                resolve("sucess")
+                resolve("Sucess")
             }
             else {
-                reject("failed");
+                reject("Failed");
             }
         });
-p.then((msg)=>{
-    document.write(msg + "-promise fullfiled");
-}).catch((msg)=>{
-    document.write(msg +"-promise rejected");
-})
+
+        let onFulfil=(msg)=>{
+             document.write(msg + "-promise fullfiled");
+        }
+
+        let onRejected=(msg)=>{
+             document.write(msg +"-promise rejected");
+        }
+        p.then(onFulfil).catch(onRejected);
+// p.then((msg)=>{
+//     document.write(msg + "-promise fullfiled");
+// }).catch((msg)=>{
+//     document.write(msg +"-promise rejected");
+// })
 
     </script>
 </body>
