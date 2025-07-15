@@ -1,13 +1,15 @@
 import React from 'react';
-import FetchApi from './api/FetchApi';
+// import Ckt from './api/Ckt';
+// import UserList from './api/UserList';
+import Company1 from './api/Company1';
 
 
 
 function App() {
   return (
-  
+
     <div>
-      <FetchApi/>
+      <Company1/>
     </div>
 
 

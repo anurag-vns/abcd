@@ -5,7 +5,7 @@ function StarWarsCharacter(){
     const[character,setcharacter]=useState(null);
 
     useEffect(()=>{
-        fetch('https://api.weather.com')
+        fetch('https://anurag-vns.github.io/jsonfile/cricket.json')
         .then(response=>response.json())
         .then(data=>setcharacter(data));
     },[]);

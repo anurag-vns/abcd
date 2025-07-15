@@ -1,33 +1,34 @@
 import react, { useEffect, useState } from "react";
 
-function FetchApi() {
-    const [post, setPost] = useState([]);
+function Ckt() {
+    const [team, setTeam] = useState([]);
     useEffect(() => {
         fetch("https://anurag-vns.github.io/jsonfile/cricket.json")
             .then((response) => {
                 response.json().then((result) => {
-                    setPost(result);
+                    setTeam(result);
+                    console.log(result);
                 })
-            })
-    });
+            });
+    })
 
 
 
     return (
         <div>
-            <ul>
+            
                 {
-                    post.map(pst => {
+                    team.map(pst => {
                         return (
                             <>
-                                <li>{pst.id}</li>
-                                <li>{pst.title}</li>
+                                <li>{pst.team1}</li>
+                                <li>{pst.team2}</li>
                             </>
                         )
                     })
                 }
-            </ul>
+            
         </div>
-    )
+    );
 }
-export default FetchApi;
+export default Ckt;
